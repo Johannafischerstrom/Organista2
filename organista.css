@@ -1,0 +1,220 @@
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Grundstil för hela sidan */
+body {
+    background-color: #EBE4D1; /* Beige bakgrundsfärg */
+    color: #2e4007; /* Textfärg */
+    font-family: Arial, sans-serif; /* Typsnitt (kan ändras efter behov) */
+}
+
+/* Stil för sidhuvudet */
+header {
+    background-color: #4F6F52; /* Mörkare grön bakgrundsfärg för sidhuvudet */
+    color: #fff; /* Textfärg för sidhuvudet */
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Stil för logotypen i sidhuvudet */
+h1 {
+    font-size: 36px;
+}
+
+/* Stil för navigationsmenyn */
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px; /* Avstånd mellan menylänkarna */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Innehållsområde för din webbsida */
+.container {
+    padding: 20px;
+}
+
+/* Exempel på en sektion med en bakgrundsfärg */
+#start {
+    background-color: #ECE3CE; /* Beige bakgrundsfärg för startsidan */
+    padding: 60px;
+}
+
+/* Upprepa ovanstående mönster för andra sektioner (t.ex., #about, #clients, #kontakt) */
+
+/* Stilar för kontaktformulär */
+.contact-section {
+    background-color: #ECE3CE; /* Beige bakgrundsfärg för kontaktsektionen */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #739072; /* Använd den gröna färgen för ramen */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-button {
+    background-color: #4F6F52; /* Mörkare grön färg för submit-knappen */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #3A4D39; /* Mörkaste gröna färg vid hover */
+}
+
+/* Stilar för kontaktuppgifter */
+.contact-details {
+    background-color: #ECE3CE; /* Beige bakgrundsfärg för kontaktuppgifterna */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.contact-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    margin: 5px 0;
+}
+
+/* Stilar för att ändra bilden */
+.right-image {
+    float: right; /* Placera bilden till höger */
+    max-width: 25%; /* Begränsa bildens bredd */
+    margin-right: 40px;/* Justera marginerna för att skapa utrymme runt bilden */
+}
+
+/* Stilar för kundomdömen */
+.review-section {
+    background-color: #EBE4D1; /* Beige bakgrundsfärg för kundomdömen */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.review {
+    background-color: #fff; /* Bakgrundsfärg för varje kundomdöme */
+    border: 1px solid #739072; /* Använd den gröna färgen för ramen */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+.image-container {
+    display: flex;
+    flex-direction: row; /* Placera element horisontellt */
+    justify-content: center; /* Centrera element längs huvudaxeln (horisontellt) */
+    align-items: center; /* Centrera element längs tväraxeln (vertikalt) */
+    text-align: center; /* Centrera texten horisontellt */
+}
+
+.customer-image {
+    width: 500px; /* Ange en fast bredd för bilderna */
+    height: 800px; /* Ange en fast höjd för bilderna */
+    margin-left: 50px; /* Lägg till marginal både till höger och vänster för att separera bilderna */
+    border: 1px solid #ccc; /* Lägg till en tunn ram runt bilderna (kan anpassas efter behov) */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Lägg till en skugga för en elegant touch */
+}
+
+/* Övriga stilar som du har definierat */
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap; /* Låt bilderna flöda ner på flera rader om de inte får plats i bredd */
+    justify-content: center; /* Centrera element längs huvudaxeln (horisontellt) */
+    align-items: center; /* Centrera element längs tväraxeln (vertikalt) */
+    margin: 20px 0;
+}
+
+.image-container img {
+    width: 30%; /* Sätt den gemensamma bredden för bilderna */
+    max-height: 600px; /* Begränsa höjden för bilderna så att de inte blir för långa */
+    margin: 10px; /* Lägg till marginal mellan bilderna */
+}
+
+/* Ny CSS för mindre bilder */
+.customer-image-small {
+    max-width: 300px; /* Ange önskad maxbredd för bilderna */
+    max-height: 300px; /* Ange önskad maxhöjd för bilderna */
+}
+
+.textruta {
+padding:0px; 
+padding-left:20px
+
+}
+
+/* Centrera texten i mitten */
+h3 {
+    text-align: center;
+}
+
+h2 {
+   margin:10px;
+   padding:0px;
+
+}
+
+h4 {
+    margin:0px;
+    padding:0px;
+    padding-left:10px
+ 
+ }
+
+ p {
+    margin:5px;
+    padding:5px;
+   
+ 
+ }
+
+x{border:solid 1px red
+
+}
+
+.logo{
+    width: 300px;
+    margin:0px;
+    padding-left: 50px;
+}

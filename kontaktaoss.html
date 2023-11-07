@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organista</title>
+    <link rel="stylesheet" href="organista.css"> <!-- Länka din CSS-fil -->
+</head>
+<body onload="buildMenu()"> 
+    <header>
+        <div class="container">
+            <img src="bilder/logo1.png" class="logo"> <!-- Rubrik -->
+            <nav>
+                <ul id="meny">
+                  
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h3>Frågor eller funderingar om vår tjänst?</h3>
+
+    <section id="kontakt" class="contact-section">
+    <h3>Kontakta oss</h3>
+    <form action="processa_formulär.php" method="post" class="contact-form">
+        <div class="form-group">
+            <label for="namn">Namn:</label>
+            <input type="text" id="namn" name="namn" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="ämne">Ämne:</label>
+            <input type="text" id="ämne" name="ämne" required>
+        </div>
+
+        <div class="form-group">
+            <label for="meddelande">Vad behöver du hjälp med?</label>
+            <textarea id="meddelande" name="meddelande" rows="4" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="submit-button">Skicka</button>
+        </div>
+
+        <script src="script/script.js"></script> 
+        
+    </form>
+</section>
