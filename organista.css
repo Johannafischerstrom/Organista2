@@ -173,9 +173,15 @@ input, textarea {
 }
 
 /* Ny CSS för mindre bilder */
+.customer-image-container {
+    display: flex;
+    justify-content: center; /* Centrera horisontellt */
+    align-items: center; /* Centrera vertikalt */
+}
+
 .customer-image-small {
-    max-width: 300px; /* Ange önskad maxbredd för bilderna */
-    max-height: 300px; /* Ange önskad maxhöjd för bilderna */
+    width: 68vw; /* Använd maximal tillgänglig bredd */
+    max-height: 68vh; /* Använd maximal tillgänglig höjd */
 }
 
 .textruta {
@@ -217,4 +223,22 @@ x{border:solid 1px red
     width: 300px;
     margin:0px;
     padding-left: 50px;
+}
+
+#meny li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Skugga när man hovrar över */
+    border-bottom: 2px solid #f8f8f8; /* Lägg till en blå linje under texten */
+    transition: box-shadow 0.3s, border-bottom 0.3s; /* Övergångseffekt för skuggan och linjen */
+}
+
+#meny li a {
+    text-decoration: none; /* Ta bort standard understrykning från länkar */
+    font-size: 14px; /* Normal textstorlek */
+    color: #ffffff; /* Standardtextfärg */
+}
+
+#meny li a:hover {
+    font-size: 16px; /* Ändra textens storlek när man hovrar över */
+    color: #f9f9f9; /* Ändra textfärgen när man hovrar över */
+    transition: font-size 0.3s, color 0.3s; /* Övergångseffekt för textstorlek och färg */
 }
