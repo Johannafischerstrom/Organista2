@@ -6,15 +6,15 @@ body, ul, li {
 
 /* Grundstil för hela sidan */
 body {
-    background-color: #EBE4D1; /* Beige bakgrundsfärg */
-    color: #2e4007; /* Textfärg */
+    background-color: #e3caab; /* Beige bakgrundsfärg */
+    color: #493423; /* Textfärg */
     font-family: Arial, sans-serif; /* Typsnitt (kan ändras efter behov) */
 }
 
 /* Stil för sidhuvudet */
 header {
-    background-color: #4F6F52; /* Mörkare grön bakgrundsfärg för sidhuvudet */
-    color: #fff; /* Textfärg för sidhuvudet */
+    background-color:#e3caab; /* Mörkare grön bakgrundsfärg för sidhuvudet */
+    color: #493423; /* Textfärg för sidhuvudet */
     padding: 10px;
 }
 
@@ -40,7 +40,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #252121;
     font-weight: bold;
 }
 
@@ -59,7 +59,7 @@ nav ul li a {
 
 /* Stilar för kontaktformulär */
 .contact-section {
-    background-color: #ECE3CE; /* Beige bakgrundsfärg för kontaktsektionen */
+    background-color: #fdfdfd; /* Beige bakgrundsfärg för kontaktsektionen */
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
@@ -88,7 +88,7 @@ input, textarea {
 }
 
 .submit-button {
-    background-color: #4F6F52; /* Mörkare grön färg för submit-knappen */
+    background-color: #493423; /* Mörkare grön färg för submit-knappen */
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -223,6 +223,67 @@ x{border:solid 1px red
     width: 300px;
     margin:0px;
     padding-left: 50px;
+}
+
+#meny li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Skugga när man hovrar över */
+    border-bottom: 2px solid #f8f8f8; /* Lägg till en blå linje under texten */
+    transition: box-shadow 0.3s, border-bottom 0.3s; /* Övergångseffekt för skuggan och linjen */
+}
+
+#meny li a {
+    text-decoration: none; /* Ta bort standard understrykning från länkar */
+    font-size: 14px; /* Normal textstorlek */
+    color: #ffffff; /* Standardtextfärg */
+}
+
+#meny li a:hover {
+    font-size: 16px; /* Ändra textens storlek när man hovrar över */
+    color: #f9f9f9; /* Ändra textfärgen när man hovrar över */
+    transition: font-size 0.3s, color 0.3s; /* Övergångseffekt för textstorlek och färg */
+}
+
+/* Ny stil för header */
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Justera vänstermarginalen för att passa dina behov */
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+/* Återställ menystilen som den var innan headerbilden lades till */
+
+/* Stil för navigationsmenyn */
+nav ul {
+    display: flex;
+    flex-direction: row; /* Visa länkarna horisontellt */
+}
+
+nav ul li {
+    margin-right: 20px; /* Avstånd mellan menylänkarna */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Ingen marginal till höger för den sista länken */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
 }
 
 #meny li:hover {
